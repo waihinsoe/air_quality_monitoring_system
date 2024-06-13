@@ -16,7 +16,10 @@ const assessQualityColor = (quality: string) => {
     return "green";
   } else if (quality === "Moderate") {
     return "yellow";
-  } else if (quality === "Poor") {
+  } else if (
+    quality === "Poor" ||
+    quality === "Unhealthy for Sensitive Groups"
+  ) {
     return "orange";
   } else if (quality === "Unhealthy") {
     return "red";
